@@ -1,0 +1,20 @@
+Vous modifiez que le "index.html" si vous etes nouveaux sur le domaine de creation de serveur ne touchez pas aux autres elements.
+
+
+
+Pour effectuer ces modifications vous devez disposer du logiciel Visual studio Code ou de Sublime Text :
+
+
+1 - Clique droit sur le fichier "index.html" puis choisir "Ouvrir avec Code" ou bien "Ouvrir avec" -> "Choisir une autre application" -> "Sublime Text" -> "OK"
+
+2 - Une fois dessus vous suivez les instructions ecrites en vert et surtout vous modifiez que ce que les congignes vous autorisent à modifier sinon vous pouvez faire face à des bgs ou des disfonctionnements.
+
+3 - Si vous voulez changer la musique vous pouvez remplacer la musique actuelle en ajoutant votre chanson sur le dossier "Loadingscreen-Fivem" et en la renommant "audio.mp3". !!! ATTENTION AU RENOMMAGE (Vous devez avoir activée l'option "Extention de noms des fichiers", si vous l'avez pas vous allez dans "Affichage" et vous cochez la case "Extention de noms des fichiers".)
+
+3 - Tester à chaque fois que les modifications ont bien étés pris en compte par le programme en double cliqueant sur le fichier index.html.
+
+4- Si le programme n'as pas pris en compte vos modifications vous avez peut-être oublies de faire "Ctrl + S" pour sauvegarder vos modifications,de fermer  et reouvrir la page en suivant l'etape n°3 la page sur votre explorateur, sinon vous avez changes des éléments non demandé par les consignes. 
+
+J'espere que mes consignes on étés utiles et que ça vous à aidé.
+
+N'oubliez pas de laisser un commentaire au dessous de la video YouTube si ce script vous a plu.  :-) 

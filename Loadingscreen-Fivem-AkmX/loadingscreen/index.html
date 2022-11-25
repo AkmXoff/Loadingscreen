@@ -1,0 +1,292 @@
+<!--/ AKM X | Crèateur de contenu et de scripts de Fivem-->
+<!DOCTYPE html>
+<html lang="fr_FR">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      LoadingScreen
+    </title>
+
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" name="viewport">
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-dark.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/colors/yellow-2.css" media="screen" rel="stylesheet" title="yellow-2" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <div class="film-grain"></div>
+
+    <div id="preloader">
+      <div id="preloader-status">
+        <div class="preloader-position preloader-effect">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div
+    class="hero-fullscreen hero-bg">
+      <div class="slide-YT hero-fullscreen">
+        <div class="slide bg-img-YT"></div>
+        <div id="videoContainment"></div><a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=mpe_-UwapVg', mute:true, showControls:false, quality:'default', opacity:0.5, containment:'#videoContainment', optimizeDisplay:true, loop:true, startAt:0, autoPlay:true, showYTLogo:false, addRaster:false, realfullscreen:true}" id="bgndVideo"></a>
+        <!--/ A la ligne juste au dessus de ce meddage vous pouvez mettre la video que vous voulez en mattant le lien dans |videoURL : 'mettez votre lien ici'|, vous pouvez mettre la video en mute ou nan en changant |mute : true| sans le son ou |mute : false| pour avoir le son de la video, je vous conseille de laisser |... : true|, les autres changez les que si vous savez ce que vous faites !-->
+      </div>
+      <div class="preload-content"></div>
+    </div>
+
+    <div class="menu-trigger top-position" id="menu">
+      <button class="lines-button minus menu-toggle" id="main-menu-caller" type="button"><span class="lines"></span></button>
+    </div>
+
+    <svg id="cursor" width="20" height="20">
+      <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="white"></stop>
+          <stop offset="100%" stop-color="white"></stop>
+        </linearGradient>
+      </defs>
+      <circle r="07" cx="10" cy="10" fill="none"></circle>
+      <line x1="0" y1="0" x2="20" y2="20"></line>
+      <line x1="0" y1="20" x2="20" y2="0"></line>
+    </svg>
+
+    <div id="ui-layer">
+      <div id="menu-wrapper">
+        <div id="main-menu">
+          <div class="menu-nav-wrapper">
+            <nav class="menu-nav">
+              <ul class="brackets">
+                <li class="menu">
+                  <a class="menu-state active"
+                    href="#"
+                    id="fire-home">Start</a>     <!--/ Vous pouvez changer les noms des catégories (texte en blanc) lorsque vous appuillez sur le menu en haut à droite-->
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-services">Règles</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-contact">Credits</a>
+                </li>
+                <li class="menu credits">
+                  <a href="#">AKM X&copy;2022.</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upper-page current"
+        id="home">
+
+      <div class="line-left left-position"></div>
+
+      <div class="line-right right-position">
+        <a href="#">AKM X &copy; 2022.</a>    <!--/ Changez ou supprimez le texte en blanc si vous voulez , c'est ce qu'il y a marque à droite de votre nom de serveur (comme une sorte de nom de marque)-->
+      </div>
+
+      <div class="transparent-borders OFF"></div>
+      <div class="center-container-home">
+
+        <div class="center-block-home">
+
+          <div class="upper-content">
+
+            <div class="container sections">
+
+              <div class="row">
+
+                <div class="fin-wrapper introduction">
+
+                  <div class="fin-slides-wrapper">
+                    <ul class="fin-slides">
+                      <li>
+                        <h3>
+                    Consultez nos règles et règlements  <!--/ Changez si vous voulez , c'est ce qu'il y a marque en haut de votre nom de serveur-->
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                      Roleplay <!--/ Changez si vous voulez , c'est ce qu'il y a marque en haut de votre nom de serveur-->
+                        </h3>
+                      </li>
+                      <li>
+                  </div>               
+                  <div class="fin-heading">
+                    <h1 class="fin-heading">
+                      <body>
+                        <p style="color:hsl(0, 0%, 99%)";>Votre Nom de Serveur</p> <!--/ Mettez le nom de votre Serveur, c'est ce qui est affiche en grand au milieu de l'ecran-->
+                      </body>
+                    </h1>
+                  </div>
+                  <div class="fin-subheading">
+                    &middot; Discord: pass &middot;  <p></p> <!--/ Mettez votre lien du discord du serveur si vous etes un seveur whitelist, pas obligé de mettre le discord vous pouvez mettre ce que vous voulez, c'est ce qu'il y a marque en bas du nom de serveur-->
+                  </body>
+                </h1>
+              </div>
+                  <div class="fin-subheading">
+                    <p style="color:#d39696";>Press <strong style="color:#ffffff";>Space</strong> to <strong>Mute</strong> and <strong>Unmute</strong>
+                    <audio id="leson" src="audio.mp3" autoplay="true" hidden="true" loop="true"/>
+                    <script>
+                    var play = false;
+                    var myAudio = document.getElementById("leson");
+                        
+                    myAudio.volume = 0.1; // Ici vous règlez le volume de votre musique lors du chargement du serveur, donc 0.1 = 100 % et 0.01 = 1 % du volume de la vidéo
+                    
+                    function onKeyDown(event) {
+                      switch (event.keyCode) {
+                        case 32: //SpaceBar                    
+                          if (play) {
+                            myAudio.pause();
+                            play = true;
+                          } else {
+                            myAudio.play();
+                            play = false;
+                          }
+                        break;
+                        }
+                          return false;
+                        }
+                    
+                    window.addEventListener("keydown", onKeyDown, false);
+                    </script>
+                      </audio>           
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-page"
+        id="services">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  Règles et Règlements <span class="get-behind">Règles et Règlements</span>     <!--/ Changer les textes en blanc si vous le souhaitez, c'est le titre quand vous entrez dans la categorie Règles-->
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="services-columns">
+
+                <div class="row">
+                  <div class="col-md-6 services-padding mb40">
+                    <h5>
+                      <span class="awesome">Règles de Roleplay</span>           <!--/ Changer le texte en blanc si vous le souhaitez, c'est le nom d'une des categories quand on clique sur le menu-->
+                    </h5>
+                    <p>
+                      - Règle 1 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                      - Règle 2 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                      - Règle 3 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                      - Règle 4 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                      - Règle 5 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                      <!--/ Vous pouvez rajouter des règles en ecrivant de la meme façon que les commandes precedentes Ex.:-->
+                      <!--/ - Règle 6 <p></p> -->
+                    </p>
+                </div>
+                <div class="row">
+                    <h5>
+                      <span class="awesome">Règles en dehors du roleplay</span>
+                    </h5>
+                    <p>
+                     - Règle 1 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                     - Règle 2 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                     - Règle 3 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                     - Règle 4 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                     - Règle 5 <p></p> <!--/ Mettez une règle de roleplay pour votre serveur si vous le souhaitez-->
+                     <!--/ Vous pouvez rajouter des règles en ecrivant de la meme façon que les commandes precedentes Ex.:-->
+                     <!--/ - Règle 6 <p></p> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-page"
+        id="contact">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  Credits <span class="get-behind">Development</span>
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-discord"></i></span>
+                  <p>
+                    AKM X<br>
+                    <a>akm_x_official</a>
+                    <a>| Developer <br></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    var play = false;
+            var vid = document.getElementById("muzica");
+            vid.volume = 0.3;
+            window.addEventListener('keyup', function(e)
+            {
+                if (e.which == 69){
+                    vid.volume = Math.min(vid.volume + 0.1,1);
+                } else if(e.which == 65){
+                    vid.volume = Math.max(vid.volume - 0.1,0);
+                };
+            });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/plugins.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
+<!--/ AKM X | Crèateur de contenu et de scripts de Fivem-->
